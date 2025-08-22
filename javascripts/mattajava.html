@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Fraktis</title>
+</head>
+<body class="bg-cyan-900 text-gray-900 p-6 font-sans">
+    <div class="max-w-3x1 mx-auto bg-cyan-600 shadow-lg rounded-x1 p-6 space-y-6">
+        <h1 class="text-w-3x1 font-bold text-center text-sky-200">
+            Java Juice Programming
+        </h1>
+        <p class="text-center text-sm text-black-500 font-bold">
+            Player: Bane | Date: 08/22/2025 
+        </p>
+
+        <!--Alert-->
+        <section>
+            <h2 class="text-x1 font-semibold mb-2">
+                <div class="flex flex-wrap gap-3 justify-center">
+                    <button onclick="showWelcome()" class="btn">Welcome</button>
+                    <button onclick="goodMorning()" class="btn">Good Morning</button>
+                    <button onclick="goodAfternoon()" class="btn">Good Afternoon</button>
+                    <button onclick="goodNight()" class="btn">Good Night</button>
+                    <button onclick="specialMessage()" class="btn">Special</button>
+                </div>
+            </h2>
+        </section>
+        <!--User info-->
+        <section>
+            <h2 class="text-xl font-bold mb-2 font-">User Info</h2>
+            <div>
+                <button onclick="getName()" class="btn">Get my Name</button>
+                <p id="displayName" class="text-black font-medium"></p>
+                <button onclick="calculateAge()" class="btn">Calculate my age</button>
+                <p id="getAge" class="text-black font-medium"></p>
+                <button onclick="getProfile()" class="btn">Get My Profile</button>
+                <p id="displayProfile" class="text-black font-medium"></p>
+            </div>
+        </section>
+        <!--Ask Permission-->
+        <section>
+            <h2 class="text-xl font-semibold mb-2">Ask Permission: BAWAL</h2>
+            <button onclick="askPermission()" class="btn">Ask Permission</button>
+        </section>
+        <!--Mini Calculator-->
+        <section>
+            <h2 class="text-xl font-semibold mb-2">Mini Calculator</h2>
+            <button onclick="simpleCalc()" class="btn">Start Calculator</button>
+            <p id="calcResult" class="text-sky-100 font-bold"></p>
+        </section>
+    </div>
+</body>
+<script src="mattajava.js"></script>
+</html>
